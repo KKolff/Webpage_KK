@@ -404,9 +404,6 @@ section + section {
 .publications-list li {
   padding: 20px 0;
   border-bottom: 1px solid var(--color-line);
-  color: #000;
-  font-size: 1.12rem;
-  text-align: justify;
 }
 
 .publications-list li:first-child {
@@ -419,6 +416,59 @@ section + section {
 
 .publications-list em {
   font-style: italic;
+}
+
+.pub-citation {
+  margin: 0 0 14px;
+  color: #000;
+  font-size: 1.12rem;
+  text-align: justify;
+}
+
+.pub-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.pub-btn {
+  display: inline-block;
+  padding: 7px 18px;
+  border: 1px solid var(--color-brown);
+  border-radius: 4px;
+  background: var(--color-brown);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.pub-btn:hover {
+  background: var(--color-brown-dark);
+  border-color: var(--color-brown-dark);
+  color: #fff;
+  text-decoration: none;
+}
+
+.pub-btn.pdf {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+}
+
+.pub-btn.pdf:hover {
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+}
+
+.pub-btn.online {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+}
+
+.pub-btn.online:hover {
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
 }
 
 /* ===== Footer ===== */
